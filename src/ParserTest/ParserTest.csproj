@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Authors>Jakub Maly;Stef Heyenrath</Authors>	
-    <TargetFrameworks>net472;net48;netcoreapp3.1;net6.0</TargetFrameworks>
+    <Authors>Jakub Maly;Stef Heyenrath</Authors>
+    <TargetFrameworks>net472;net48;net481;net8.0;net10.0</TargetFrameworks>
     <AssemblyName>ParserTest</AssemblyName>
     <OutputType>Exe</OutputType>
     <PackageId>ParserTest</PackageId>

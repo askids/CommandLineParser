@@ -1,6 +1,6 @@
 os: Visual Studio 2022
 
-version: 3.1.0.{build}
+version: 4.0.0.{build}
 
 configuration:
 - Debug
@@ -21,14 +21,15 @@ build_script:
  - cmd: dotnet restore src\ParserTest\ParserTest.csproj
  - cmd: dotnet build src\ParserTest\ParserTest.csproj --configuration %CONFIGURATION% --framework net472
  - cmd: dotnet build src\ParserTest\ParserTest.csproj --configuration %CONFIGURATION% --framework net48
- - cmd: dotnet build src\ParserTest\ParserTest.csproj --configuration %CONFIGURATION% --framework netcoreapp3.1
- - cmd: dotnet build src\ParserTest\ParserTest.csproj --configuration %CONFIGURATION% --framework net6.0
- 
+ - cmd: dotnet build src\ParserTest\ParserTest.csproj --configuration %CONFIGURATION% --framework net481
+ - cmd: dotnet build src\ParserTest\ParserTest.csproj --configuration %CONFIGURATION% --framework net8.0
+ - cmd: dotnet build src\ParserTest\ParserTest.csproj --configuration %CONFIGURATION% --framework net10.0
+
  - cmd: dotnet restore src\Tests\Tests.csproj
- - cmd: dotnet build src\Tests\Tests.csproj --configuration %CONFIGURATION% --framework net6.0
+ - cmd: dotnet build src\Tests\Tests.csproj --configuration %CONFIGURATION% --framework net10.0
 
 test_script:
- - cmd: dotnet test src\Tests\Tests.csproj --configuration %CONFIGURATION% --framework net6.0
+ - cmd: dotnet test src\Tests\Tests.csproj --configuration %CONFIGURATION% --framework net10.0
 
 cache:
 - '%USERPROFILE%\.nuget\packages'
