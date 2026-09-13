@@ -1,3 +1,9 @@
+# 4.0.0 (13 September 2026)
+Rebuild with .Net 10 and upgrade library dependencies. No functional changes.
+
+# 3.1.0 (14 August 2022)
+Replace Console.Write logging with ILogger using Microsoft logging extenions. Also retain support only for .Net Standard 2.0 and 2.1 going forward.
+
 # 3.0.23 (04 August 2022)
 - [#74](https://github.com/j-maly/CommandLineParser/pull/74) - Bump System.Text.RegularExpressions from 4.3.0 to 4.3.1 in /src/CommandLineArgumentsParser [dependencies] contributed by [dependabot[bot]](https://github.com/apps/dependabot)
 - [#80](https://github.com/j-maly/CommandLineParser/pull/80) - Fixed RegexValueArgumentAttribute [bug] contributed by [StefH](https://github.com/StefH)
